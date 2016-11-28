@@ -198,7 +198,7 @@ a {
     height: 40px;
     padding: 10px;
     left: 140px;
-    top: 35%;
+    top: 20%;
     margin-top: -30px;
     cursor: pointer;
     border-radius: 50%;
@@ -213,7 +213,7 @@ a {
     height: 40px;
     padding: 10px;
     right: 140px;
-    top: 35%;
+    top: 20%;
     margin-top: -30px;
     cursor: pointer;
     border-radius: 50%;
@@ -234,12 +234,6 @@ a {
   font-family: 'Gloria Hallelujah', cursive;
   text-shadow: 1px 1px #6d6360;
 }
-
-/* Styling for the author text in each quote */
-
-
-/* jQuery Manipulation Classes */
-
 .no-scroll {
 	overflow: hidden;
 }
@@ -256,9 +250,11 @@ a {
 	-o-transform: translateX(0px);
 }
 .moving-images{
+  object-fit: cover;
   opacity: .9;
-  height: 800px;
+  width: 100%;
   margin: 0 auto;
+  height:800px;
 
 
 }
@@ -282,7 +278,6 @@ a {
   overflow-x: hidden;
 
 }
-
 .mySlides {display:none}
 .mySlides2 {display:none}
 .fade {
@@ -292,36 +287,11 @@ a {
   animation-duration: 1.5s;
 }
 @-webkit-keyframes fade {
-  from {opacity: .4}
+  from {opacity: .5}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .5}
   to {opacity: 1}
 }
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-
-#wrapper
-{
-    max-width: 60em; /* 960 px */
-    margin: 0 auto;
-}
-    #list
-    {
-        width: 103.125%; /* 990px */
-        overflow: hidden;
-        margin-left: -1.562%; /* 15px */
-        margin-bottom: -1.875em; /* 30px */
-    }
-        .item
-        {
-            width: 30.303%; /* 300px */
-            float: left;
-            margin: 0 1.515% 1.875em; /* 15px 30px */
-        }

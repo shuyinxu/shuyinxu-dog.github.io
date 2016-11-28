@@ -1,14 +1,15 @@
-.masonry { /* Masonry container */
+.masonry {
     column-count: 3;
     column-gap: 1.5em;
     margin-left: 100px;
     margin-right: 100px;
     padding: 80px 0px 0px 0px;
     background: #fff5dd;
+    
 
 }
 
-.item { /* Masonry bricks or child elements */
+.item {
     background-color: #fff5dd;
     display: inline-block;
     margin: 0 0 1em;
