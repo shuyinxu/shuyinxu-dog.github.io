@@ -251,7 +251,7 @@ a {
 }
 .moving-images{
   object-fit: cover;
-  opacity: .9;
+  opacity: .8;
   width: 100%;
   margin: 0 auto;
   height:800px;
