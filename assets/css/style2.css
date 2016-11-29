@@ -1,6 +1,8 @@
 .masonry {
     column-count: 3;
     column-gap: 1.5em;
+    -moz-column-count: 3;
+    -moz-column-gap: 1.5em;
     margin-left: 100px;
     margin-right: 100px;
     padding: 80px 0px 0px 0px;
