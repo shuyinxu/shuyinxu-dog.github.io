@@ -251,10 +251,11 @@ a {
 }
 .moving-images{
   object-fit: cover;
-  opacity: .9;
-  width: 100% !important;
+  opacity: .8;
+  width: 100%;
   margin: 0 auto;
   height:800px;
+
 
 }
 .overwords{
