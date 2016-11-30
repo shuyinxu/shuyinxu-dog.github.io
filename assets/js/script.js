@@ -31,11 +31,9 @@ $('#corgi').click(function(){
     $('#info').show();
 });
 $( "#link" ).hover(function() {
-    console.log("omg")
     $( this ).addClass( "big" );
   },
   function() {
-    console.log("kkk")
     $( this ).removeClass( "big" );
   }
 );
