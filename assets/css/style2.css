@@ -1,19 +1,24 @@
 .masonry {
-    column-count: 3;
-    column-gap: 1.5em;
-    -moz-column-count: 3;
-    -moz-column-gap: 1.5em;
-    margin-left: 100px;
-    margin-right: 100px;
+    column-count: 2;
+    column-gap: 1em;
+    -moz-column-count: 2;
+    -moz-column-gap: 3em;
+    margin-left: 150px;
+    margin-right: 150px;
     padding: 80px 0px 0px 0px;
-    background: #fff5dd;
+    background: #fff9ef;
 }
 
 .item {
-    background-color: #fff5dd;
+    background-color: #fff9ef;
     display: inline-block;
-    margin: 0 0 1em;
+    margin: 0 0 0em;
     width: 100%;
+    margin-bottom: 10px;
+}
+
+#mode{
+  color: red;
 }
 .item:hover{
   opacity:.7;
@@ -56,15 +61,84 @@ a:hover{
 }
 h1{
   font-family: 'Gloria Hallelujah', cursive;
-  font-size: 35px;
+  font-size: 20px;
   letter-spacing:1;
 }
 p{
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 25px;
-  line-height: 1.5;
-  letter-spacing:.8;
+
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing:.6;
+  font-family: 'Questrial', sans-serif;
 }
 .big{
   font-size: 30;
+}
+#imgcontainer{
+  float: left;
+  height: 100%;
+  width: 70%;
+
+}
+
+.infodogs{
+  height: 100%;
+  opacity: .8;
+  width: 100%;
+  overflow: hidden;
+}
+
+#animation{
+  display: inline-block;
+  float: right;
+  width: 30%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+svg {
+	width: 45%;
+	stroke-dasharray:440;
+	stroke-dashoffset: 440;
+	animation: 5s dash ease forwards;
+ 	text-align: center;
+	margin: 25% 10% 5% 20%;
+}
+path.st0{
+	animation: 2s color-change ease infinite;
+	fill: red;
+}
+
+@keyframes dash{
+	from{
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(2);
+	}
+	to{
+		stroke-dashoffset: 0;
+		transform: scale(2);
+	}
+}
+
+
+@keyframes color-change{
+	20%{
+		fill:cornflowerblue;
+	}
+}
+
+body {
+    animation: myfadeInAnimation 3s;
+    text-align: center;
+}
+
+@keyframe myfadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes myfadeInAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
